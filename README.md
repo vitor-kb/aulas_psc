@@ -1,3 +1,3 @@
 # aulas_psc
 
-##Repo das aulas de Programação de Soluções Computacionais
+## Repo das aulas de Programação de Soluções Computacionais
