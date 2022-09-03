@@ -80,6 +80,9 @@ public class Lista_exs_joao {
         
         //EXTRA
         //for(int)
+            
+        // IF ternário
+            //valor = valor1 > valor2 ? valor1 : valor2;
         
     }
     
