@@ -83,6 +83,7 @@ public class Lista_exs_joao {
             
         // IF ternário
             //valor = valor1 > valor2 ? valor1 : valor2;
+            //https://github.com/jcoghi
         
     }
     
