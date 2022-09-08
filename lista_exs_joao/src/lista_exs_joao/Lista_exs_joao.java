@@ -9,26 +9,26 @@ public class Lista_exs_joao {
                 // RODE UM DE CADA VEZ, COMENTE OS OUTROS ANTES DE USAR POR POSSUIR VARIÁVEIS
                 // COM NOMES PARECIDOS.
                 // EX 1
-                // int numeroero;
+                // int numero;
                 // System.out.println("Digite um número inteiro: ");
-                // numeroero = entrada.nextInt();
-                // System.out.println("O número digitado é: " + numeroero);
+                // numero = entrada.nextInt();
+                // System.out.println("O número digitado é: " + numero);
 
                 // EX 2
-                // float numeroero_real;
+                // float numero_real;
                 // System.out.println("Digite um número real: ");
-                // numeroero_real = (float) entrada.nextFloat();
-                // System.out.println("O número digitado é: " + numeroero_real);
+                // numero_real = (float) entrada.nextFloat();
+                // System.out.println("O número digitado é: " + numero_real);
 
                 // EX 3
-                // int numeroero1, numeroero2, numeroero3, soma;
+                // int numero1, numero2, numeroe3, soma;
                 // System.out.println("Digite um número inteiro: ");
-                // numeroero1 = entrada.nextInt();
+                // numero1 = entrada.nextInt();
                 // System.out.println("Digite outro número inteiro: ");
-                // numeroero2 = entrada.nextInt();
+                // numero2 = entrada.nextInt();
                 // System.out.println("Digite outro número inteiro: ");
-                // numeroero3 = entrada.nextInt();
-                // soma = numeroero1 + numeroero2 + numeroero3;
+                // numero3 = entrada.nextInt();
+                // soma = numero1 + numeroe2 + numero3;
                 // System.out.println("A soma dos números é: " + soma);
 
                 // EX 4
@@ -53,10 +53,10 @@ public class Lista_exs_joao {
                 // "m/s");
 
                 // EX 7
-                // int numeroero, antecessor;
+                // int numero, antecessor;
                 // System.out.println("Digite um número inteiro: ");
-                // numeroero = entrada.nextInt();
-                // antecessor = numeroero - 1;
+                // numero = entrada.nextInt();
+                // antecessor = numero - 1;
                 // System.out.println("O antecessor do número é: " + antecessor);
 
                 // EX 8
