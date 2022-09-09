@@ -13,5 +13,6 @@ public class ExercicioAlgoritmo {
         nota2 = entrada.nextDouble();
         media = (nota1 + nota2) / 2;
         System.out.println("A media de " + nome + " e: " + media);
+        entrada.close();
     }
 }
