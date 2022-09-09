@@ -4,6 +4,8 @@ import java.util.Scanner;
 public class Exs_leandro {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
+        //PARA APAGAR OS CÓDIGOS COMENTADOS É SÓ REMOVER OS // OU /* */
+
         //EXEMPLO
         /*Random random = new Random();
         
