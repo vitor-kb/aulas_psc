@@ -74,19 +74,18 @@ public class Lista_exs_joao {
                 // System.out.printf("A area da circunferencia e: %.2f \n", area);
 
                 // EXTRA - faça um programa que leia o maior e menor número de uma lista de 5
-                /*int valores = 0;
-                maior = 0; 
-                menor = 0;
-
-                for (int x_valores = 0; x_valores < 5; x_valores++) {
+                /*int valores, maior, menor;
+                
+                System.out.println("Insira um valor:");
+                
+                valores = entrada.nextInt();
+                maior = valores;
+                menor = valores;
+                
+                for (int x_valores = 1; x_valores < 5; x_valores++) {
 
                         System.out.println("Insira um valor:");
                         valores = entrada.nextInt();
-
-                        if (x_valores == 0) {
-                                maior = valores;
-                                menor = valores;
-                        }
 
                         if (valores > maior) {
                                 maior = valores;
@@ -97,7 +96,7 @@ public class Lista_exs_joao {
                         }
                 }
 
-                System.out.print("Maior: " + maior + "\nMenor: " + menor);*/
+                System.out.println("Maior: " + maior + "\nMenor: " + menor);*/
                 
                 // IF ternário
                 // valor = valor1 > valor2 ? valor1 : valor2;
