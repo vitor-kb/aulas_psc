@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class Lista_exs_joao_09_09 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
+
+        // https://github.com/jcoghi
         
         //EX 1
         /*double salario = 100.00;
@@ -128,6 +130,30 @@ public class Lista_exs_joao_09_09 {
         if("feminino".equals(sexo)){
             System.out.println("Seu peso ideal: " + (float)peso_ideal_f);
         }*/
+
+        //EX 6
+        /*double peso_regime = 50.00;
+        double multa = 4.00;
+        double peso_peixe;
+
+        System.out.println("Digite o peso do peixe: ");
+        peso_peixe = entrada.nextDouble();
+
+        if(peso_peixe > peso_regime){
+            multa = multa * (peso_peixe-50);
+            System.out.println("Multa de: " + multa + "pois o peso do seu peixe e: " + peso_peixe + " que e excedente ao valor de " + peso_regime + " KG.");
+        }else{
+            System.out.println("Sem multa, o peso do seu peixe: " + peso_peixe + " portanto nao ha a necessidade de pagar multa!");
+        }*/
+
+        //EX 7
+
+        String nome, sexo;
+        int idade;
+        double qnt_hemoglobina;
+
+
+
         entrada.close();
     } 
 }
