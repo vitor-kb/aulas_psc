@@ -6,6 +6,8 @@ public class Aula_23_09 {
         Random randao = new Random();
         Scanner entrada = new Scanner(System.in);
         
+        //CASSINO
+        
         double valorCarteira;
         System.out.println("Digite o valor que quer apostar: ");
         valorCarteira = entrada.nextDouble();
