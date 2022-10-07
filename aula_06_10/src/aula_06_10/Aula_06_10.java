@@ -112,7 +112,7 @@ public class Aula_06_10 {
         Scanner entrada = new Scanner(System.in);
         System.out.println("Deseja ajustar a hora? (S ou N)");
         char opcao = entrada.next().charAt(0);
-        if (opcao == 'S') {
+        if (opcao == 'S' || opcao == 's') {
             Relogio rel = new Relogio(opcao);
             rel.acertaHora();
         }
