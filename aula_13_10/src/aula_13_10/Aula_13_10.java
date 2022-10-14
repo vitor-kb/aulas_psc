@@ -66,5 +66,7 @@ public class Aula_13_10 {
         for (int i = 0; i < 3; i++) {
             System.out.println(f[i].salarioBase());
         }
+
+        entrada.close();
     }
 }
