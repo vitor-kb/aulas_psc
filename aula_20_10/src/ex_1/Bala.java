@@ -22,10 +22,4 @@ public class Bala {
         this.posicaoY = Y;
     }
 
-    //construtor
-    Bala(double X, double Y) {
-        this.posicaoX = X;
-        this.posicaoY = Y;
-    }
-
 }

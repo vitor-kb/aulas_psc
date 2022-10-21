@@ -4,25 +4,28 @@ public class Canhao {
 
     //atributos
     private Bala bala;
-    double posicaoXfinal;
+    private double posicaoFinalBala;
 
     //comportamentos - estao sem public pois os metodos ja sao public por padrao
     void disparar(double velocidade, double angulo) {
-        posicaoXfinal = velocidade * velocidade
+        this.posicaoFinalBala = velocidade * velocidade
                 * (Math.sin(2 * (Math.toRadians(angulo)) / 9.81));
-        System.out.println("Projetil lancado!");
     }
 
-    void getAlacanceMaximo() {
-        double local = posicaoXfinal + bala.getPosicaoX();
-        System.out.println("O alcance maximo foi de: " + local);
+    double getAlacanceMaximo() {
+        return this.posicaoFinalBala + this.bala.getPosicaoX();
     }
 
-    void setBala(Bala bala) {
-        this.bala = bala;
+    void setBala(double X, double Y) {
+        this.bala.setPosicaoX(X);
+        this.bala.setPosicaoY(Y);
     }
 
     Bala getBala() {
-        return this.bala;
+        return bala;
+    }
+
+    void setBala(Bala bala){
+        this.bala = bala;
     }
 }

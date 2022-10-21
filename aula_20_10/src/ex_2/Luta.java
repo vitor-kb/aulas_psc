@@ -4,88 +4,74 @@ import java.util.Random;
 
 public class Luta {
 
-    //atributos
+    // atributos
     private Lutador desafiado;
     private Lutador desafiante;
-    private int rounds, ado = 0, ante = 0;
+    private int rounds;
     private boolean aprovada;
-    //metodos acessores
+    private int ado = 0, ante = 0;
 
-    public Lutador getDesafiado() {
-        return desafiado;
-    }
+    // metodos acessores
 
     public void setDesafiado(Lutador desafiado) {
         this.desafiado = desafiado;
-    }
-
-    public Lutador getDesafiante() {
-        return desafiante;
     }
 
     public void setDesafiante(Lutador desafiante) {
         this.desafiante = desafiante;
     }
 
-    public int getRounds() {
-        return rounds;
-    }
-
     public void setRounds(int rounds) {
         this.rounds = rounds;
     }
 
-    public boolean isAprovada() {
+    public boolean getAprovada() {
         return aprovada;
     }
 
-    public void setAprovada(boolean aprovada) {
-        this.aprovada = aprovada;
-    }
-
-    //comportamento
-    void marcarLuta() {
-        if (desafiante.equals(desafiado)
-                || desafiante.getCategoria() != desafiado.getCategoria()) {
-            System.out.println("Luta cancelada!");
-            this.aprovada = false;
-        } else {
-            System.out.println("Luta aprovada!");
-            this.aprovada = true;
+    // comportamento
+    void marcarLuta(int rounds) {
+        this.rounds = rounds;
+        if (desafiado.getCategoria().equals(desafiante.getCategoria())
+                && desafiado.getNome() != desafiante.getNome()) {
+            aprovada = true;
+            System.out.println("Luta valida entre " + desafiado.getNome() + " e " + desafiante.getNome());
         }
     }
 
-    void lutar(int rounds) {
-        Random aleatorio = new Random();
-        
-        if(aprovada){
-            desafiante.apresentar();
-            desafiado.apresentar();
-            System.out.println("Inicio da luta");
-            for (int i = 0; i < rounds; i++) {
-                System.out.println("Round: " + (i+1));
-                int luta = aleatorio.nextInt(2);
-                if(luta == 0){
-                    ante++;
-                    System.out.println("Vitoria do desafiante!");
-                }
-                if(luta == 1){
-                    ado++;
-                    System.out.println("Vitoria do desafiado!");
-                }
-                if(luta == 2){
-                    System.out.println("Empate!");
+    void lutar() {
+        if (aprovada) {
+            for (int round = 0; round < this.rounds; round++) {
+                System.out.println("Round: " + (round + 1));
+                System.out.println("----LUTEM----");
+                Random aleatorio = new Random();
+                int teste = aleatorio.nextInt(2);
+                switch (teste) {
+                    case 0:
+                        System.out.println("Vitoria do " + desafiado.getNome());
+                        ado++;
+                        break;
+                    case 1:
+                        System.out.println("Vitoria do " + desafiante.getNome());
+                        ante++;
+                        break;
+                    case 2:
+                        System.out.println("Empate!");
+                        break;
                 }
             }
-            if(ado > ante){
+            if (ado > ante) {
+                System.out.println("\nVencedor: " + desafiado.getNome());
                 desafiado.ganharLuta();
                 desafiante.perderLuta();
             }
-            if(ante > ado){
-                desafiante.ganharLuta();
+            if (ante > ado) {
+                System.out.println("\nVencedor: " + desafiante.getNome());
                 desafiado.perderLuta();
+                desafiante.ganharLuta();
             }
-            if(ante == ado){
+            if (ante == ado) {
+                System.out.println("\nEmpate!");
                 desafiante.empatarLuta();
                 desafiado.empatarLuta();
             }
