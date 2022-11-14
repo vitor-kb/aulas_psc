@@ -13,132 +13,105 @@ public class Segundo_grau extends javax.swing.JFrame {
          */
         @SuppressWarnings("unchecked")
         // <editor-fold defaultstate="collapsed" desc="Generated
-        // Code">//GEN-BEGIN:initComponents
-        private void initComponents() {
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
 
-                lbl_valorA = new javax.swing.JLabel();
-                lbl_valorB = new javax.swing.JLabel();
-                lbl_valorC = new javax.swing.JLabel();
-                jLabel1 = new javax.swing.JLabel();
-                txt_valorA = new javax.swing.JTextField();
-                txt_valorB = new javax.swing.JTextField();
-                txt_valorC = new javax.swing.JTextField();
-                btn_calcular = new javax.swing.JButton();
-                lbl_resposta = new javax.swing.JLabel();
+        lbl_valorA = new javax.swing.JLabel();
+        lbl_valorB = new javax.swing.JLabel();
+        lbl_valorC = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        txt_valorA = new javax.swing.JTextField();
+        txt_valorB = new javax.swing.JTextField();
+        txt_valorC = new javax.swing.JTextField();
+        btn_calcular = new javax.swing.JButton();
+        lbl_resposta = new javax.swing.JLabel();
 
-                setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-                setResizable(false);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-                lbl_valorA.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
-                lbl_valorA.setText("Valor do A");
+        lbl_valorA.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        lbl_valorA.setText("Valor do A");
 
-                lbl_valorB.setText("Valor do B");
+        lbl_valorB.setText("Valor do B");
 
-                lbl_valorC.setText("Valor do C");
+        lbl_valorC.setText("Valor do C");
 
-                jLabel1.setFont(new java.awt.Font("Segoe UI", 2, 24)); // NOI18N
-                jLabel1.setText("Equação do 2° Grau");
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 2, 24)); // NOI18N
+        jLabel1.setText("Equação do 2° Grau");
 
-                txt_valorA.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                txt_valorAActionPerformed(evt);
-                        }
-                });
+        txt_valorA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_valorAActionPerformed(evt);
+            }
+        });
 
-                btn_calcular.setText("Calcular");
-                btn_calcular.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                btn_calcularActionPerformed(evt);
-                        }
-                });
+        btn_calcular.setText("Calcular");
+        btn_calcular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_calcularActionPerformed(evt);
+            }
+        });
 
-                lbl_resposta.setBorder(javax.swing.BorderFactory.createTitledBorder("Resultado"));
+        lbl_resposta.setBorder(javax.swing.BorderFactory.createTitledBorder("Resultado"));
 
-                javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-                getContentPane().setLayout(layout);
-                layout.setHorizontalGroup(
-                                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addGroup(layout.createSequentialGroup()
-                                                                .addGroup(layout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                .addGroup(layout.createSequentialGroup()
-                                                                                                .addGap(109, 109, 109)
-                                                                                                .addComponent(jLabel1))
-                                                                                .addGroup(layout.createSequentialGroup()
-                                                                                                .addContainerGap()
-                                                                                                .addGroup(layout
-                                                                                                                .createParallelGroup(
-                                                                                                                                javax.swing.GroupLayout.Alignment.TRAILING)
-                                                                                                                .addComponent(btn_calcular)
-                                                                                                                .addGroup(layout
-                                                                                                                                .createParallelGroup(
-                                                                                                                                                javax.swing.GroupLayout.Alignment.LEADING,
-                                                                                                                                                false)
-                                                                                                                                .addGroup(layout.createSequentialGroup()
-                                                                                                                                                .addComponent(lbl_valorA)
-                                                                                                                                                .addPreferredGap(
-                                                                                                                                                                javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                                                                                                                .addComponent(txt_valorA))
-                                                                                                                                .addGroup(layout.createSequentialGroup()
-                                                                                                                                                .addComponent(lbl_valorB)
-                                                                                                                                                .addGap(18, 18, 18)
-                                                                                                                                                .addComponent(txt_valorB))
-                                                                                                                                .addGroup(layout.createSequentialGroup()
-                                                                                                                                                .addComponent(lbl_valorC)
-                                                                                                                                                .addGap(18, 18, 18)
-                                                                                                                                                .addComponent(txt_valorC,
-                                                                                                                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                                                                                                                                92,
-                                                                                                                                                                Short.MAX_VALUE)))))
-                                                                                .addGroup(layout.createSequentialGroup()
-                                                                                                .addGap(93, 93, 93)
-                                                                                                .addComponent(lbl_resposta,
-                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                                208,
-                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                                                .addContainerGap(83, Short.MAX_VALUE)));
-                layout.setVerticalGroup(
-                                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addGroup(layout.createSequentialGroup()
-                                                                .addGap(26, 26, 26)
-                                                                .addComponent(jLabel1)
-                                                                .addGap(33, 33, 33)
-                                                                .addGroup(layout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(lbl_valorA)
-                                                                                .addComponent(txt_valorA,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                .addPreferredGap(
-                                                                                javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                .addGroup(layout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(lbl_valorB)
-                                                                                .addComponent(txt_valorB,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                .addGap(6, 6, 6)
-                                                                .addGroup(layout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(lbl_valorC)
-                                                                                .addComponent(txt_valorC,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                .addGap(15, 15, 15)
-                                                                .addComponent(btn_calcular)
-                                                                .addGap(18, 18, 18)
-                                                                .addComponent(lbl_resposta,
-                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                54,
-                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addContainerGap(22, Short.MAX_VALUE)));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(109, 109, 109)
+                                .addComponent(jLabel1))
+                            .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(btn_calcular)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(lbl_valorA)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(txt_valorA))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(lbl_valorB)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(txt_valorB))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addComponent(lbl_valorC)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(txt_valorC, javax.swing.GroupLayout.DEFAULT_SIZE, 92, Short.MAX_VALUE))))))
+                        .addGap(0, 77, Short.MAX_VALUE))
+                    .addComponent(lbl_resposta, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(jLabel1)
+                .addGap(33, 33, 33)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lbl_valorA)
+                    .addComponent(txt_valorA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lbl_valorB)
+                    .addComponent(txt_valorB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(6, 6, 6)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lbl_valorC)
+                    .addComponent(txt_valorC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15)
+                .addComponent(btn_calcular)
+                .addGap(18, 18, 18)
+                .addComponent(lbl_resposta, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(22, Short.MAX_VALUE))
+        );
 
-                pack();
-                setLocationRelativeTo(null);
-        }// </editor-fold>//GEN-END:initComponents
+        pack();
+        setLocationRelativeTo(null);
+    }// </editor-fold>//GEN-END:initComponents
 
         private void txt_valorAActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_txt_valorAActionPerformed
                 // TODO add your handling code here:
@@ -217,15 +190,15 @@ public class Segundo_grau extends javax.swing.JFrame {
                 });
         }
 
-        // Variables declaration - do not modify//GEN-BEGIN:variables
-        private javax.swing.JButton btn_calcular;
-        private javax.swing.JLabel jLabel1;
-        private javax.swing.JLabel lbl_resposta;
-        private javax.swing.JLabel lbl_valorA;
-        private javax.swing.JLabel lbl_valorB;
-        private javax.swing.JLabel lbl_valorC;
-        private javax.swing.JTextField txt_valorA;
-        private javax.swing.JTextField txt_valorB;
-        private javax.swing.JTextField txt_valorC;
-        // End of variables declaration//GEN-END:variables
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_calcular;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel lbl_resposta;
+    private javax.swing.JLabel lbl_valorA;
+    private javax.swing.JLabel lbl_valorB;
+    private javax.swing.JLabel lbl_valorC;
+    private javax.swing.JTextField txt_valorA;
+    private javax.swing.JTextField txt_valorB;
+    private javax.swing.JTextField txt_valorC;
+    // End of variables declaration//GEN-END:variables
 }
