@@ -136,8 +136,8 @@ public class Segundo_grau extends javax.swing.JFrame {
 
                         double resultadoX2 = ((b * -1) - (Math.sqrt(resultadoDelta))) / (2 * a);
 
-                        lbl_resposta.setText(Double.toString(resultadoDelta) + " x1:" + Double.toString(resultadoX)
-                                        + " x2:" + Double.toString(resultadoX2));
+                        lbl_resposta.setText(Double.toString(resultadoDelta) + " x¹:" + Double.toString(resultadoX)
+                                        + " x²:" + Double.toString(resultadoX2));
                 }
 
         }// GEN-LAST:event_btn_calcularActionPerformed
